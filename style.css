@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+h1{
+    color: rgb(58, 133, 61);
+    position: absolute;
+    top: 4em;
+}
+
+.main_loader{
+    margin: 6em auto;
+    width: 5em;
+    height: 2.5em;
+    text-align: center;
+    font-size: 1em;
+}
+
+.main_loader > div{
+    background-color: rgb(7, 123, 11);
+    height: 100%;
+    width: 0.5em;
+    display: inline-block;
+    animation: roll 1.2s infinite ease-in-out;
+}
+
+.main_loader  .loader6{
+    animation-delay: -0.8s;
+}
+
+.main_loader .loader5{
+    animation-delay: -1s;
+}
+
+.main_loader .loader4{
+    animation-delay: -1.2s;
+}
+.main_loader .loader3{
+    animation-delay: -1.4s;
+}
+
+.main_loader .loader2{
+    animation-delay: -1.6s;
+}
+
+@keyframes roll{
+    0%,40%,100%{
+    transform: scaleY(0.4);  
+    }
+    20%{
+        transform: scaleY(1);
+    }
+    50%{
+        transform: scaleY(1.5);
+    }
+}
